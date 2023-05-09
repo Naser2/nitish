@@ -38,7 +38,7 @@ export const SocialLinks = ({ animate, color }) => {
   return (
     <div className="flex space-x-6 md:space-x-0  lg:space-x-1 lg:pb-3">
       {social.map((item) => (
-        <a
+        <Link
           key={item.name}
           href={item.href}
           className={clsx(
@@ -54,7 +54,7 @@ export const SocialLinks = ({ animate, color }) => {
             className="h-10 w-10 max-[1403px]:!h-16 lg:h-10 lg:w-10 min-[1403px]:!w-16 "
             aria-hidden="true"
           />
-        </a>
+        </Link>
       ))}
       <Link
         href="mailto:soma@Nitishnyc.com"

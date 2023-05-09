@@ -50,7 +50,7 @@ export default function ServicesPage() {
           alt="App screenshot"
           width={1832}
           height={1242}
-          className="about-banner min-[600px]:aspect-[2160/1640] max-[600px]:aspect-[2102/1640] object-cover object-center  md:mt-0 xl:rounded-xl"
+          className="about-banner object-cover object-center max-[600px]:aspect-[2102/1640] min-[600px]:aspect-[2160/1640]  md:mt-0 xl:rounded-xl"
         />
 
         {/* <img
@@ -118,12 +118,12 @@ export default function ServicesPage() {
             </div>
 
             <div className="mt-10 flex items-center gap-x-6">
-              <a
+              <Link
                 href="/jokes"
                 className=" bg-blue-500 px-3.5 py-2.5 text-xl  text-sm font-semibold text-white shadow-sm hover:bg-black hover:bg-black  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
               >
                 SEE JOKES
-              </a>
+              </Link>
               {/* <a
                 href="#detailedExpertise"
                 className="text-xl  font-semibold leading-6 text-black "

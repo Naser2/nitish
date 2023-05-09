@@ -14,7 +14,7 @@ import clsx from 'clsx'
 function MenuIcon(props) {
   return (
     // <div className="relative h-20 w-20">
-    <a
+    <Link
       data-testid="linkElement"
       data-popupid="ykhf8"
       target="_self"
@@ -48,7 +48,7 @@ function MenuIcon(props) {
           </g>
         </svg>
       </div>
-    </a>
+    </Link>
     // </div>
   )
 }
