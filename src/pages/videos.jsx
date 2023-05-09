@@ -70,37 +70,64 @@ export default function ServicesPage() {
               Standups & Episodes
             </h1>
             <div className="grid-cols-3 gap-x-2 space-y-1 py-1 px-0.5 pb-2 lg:grid lg:!space-y-4 lg:px-2">
-              <video controls src={'/nitish8.mp4'} className="lg:mt-4"></video>{' '}
+              <video
+                controls
+                src={'/public/nitish8.mp4'}
+                poster={'/piublic/nitish.mp4'}
+                preload="metadata"
+                className="lg:mt-4"
+              ></video>{' '}
               <FadeInSection>
                 <video
                   controls
                   src={'/nitish.mp4'}
+                  poster={'/nitish.mp4'}
+                  preload="metadata"
                   // className="lg:-mt-4"
                 ></video>
               </FadeInSection>
               <video
                 controls
-                src={'/nitish2.mp4'}
+                source={'/nitish2.mp4'}
+                poster={'/nitish.mp4'}
+                preload="metadata"
                 // className="lg:!-mt-6"
               ></video>
               <video
                 controls
                 src={'/nitish3.mp4'}
+                poster={'/public/nitish.mp4'}
+                preload="metadata"
                 // className="lg:!-mt-1"
               ></video>
               <FadeInSection>
                 <video
                   controls
-                  src={'/nitish9.mp4'}
+                  source={'/public/nitish9.mp4'}
+                  poster={'/public/nitish.mp4'}
                   className="lg:!-mt-0"
+                  preload="metadata"
                 ></video>
               </FadeInSection>
               <video
-                controls
-                src={'/nitish4.mp4'}
+                // controls
+                poster={'/public/nitish.mp4'}
+                // src={'/nitish4.mp4'}
+                src="/nitish4.mp4"
+                thumbnail="/nitish4.mp4"
+                onBlurCapture="/nitish4.mp4"
+                blurpUrl="/nitish4.mp4"
+                preload="metadata"
                 className="lg:!-mt-2"
               ></video>
-              <video controls src={'/nitish5.mp4'} className=""></video>
+              <video
+                controls
+                src={'/nitish5.mp4'}
+                thumbnail="/nitish4.mp4"
+                blurpUrl="/nitish4.mp4"
+                preload="metadata"
+                className=""
+              ></video>
               <FadeInSection>
                 <video controls src={'/nitish6.mp4'} className=""></video>
               </FadeInSection>
