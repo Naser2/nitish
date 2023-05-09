@@ -76,11 +76,28 @@ export default function LandingGallery() {
           </button>
         </div> */}
         <div className="grid-cols-3 gap-x-2 space-y-1 py-1 px-0.5 pb-2 lg:grid lg:space-y-4 lg:px-2">
-          <video controls src={'/nitish.mp4'}></video>{' '}
+          <video
+            controls
+            src={'/nitish.mp4'}
+            poster={'/nitish.mp4'}
+            preload="metadata"
+          ></video>{' '}
           <FadeInSection>
-            <video controls src={'/nitish2.mp4'} className="lg:pt-2"></video>
+            <video
+              controls
+              src={'/nitish2.mp4'}
+              poster={'/nitish2.mp4'}
+              preload="metadata"
+              className="lg:pt-2"
+            ></video>
           </FadeInSection>
-          <video controls src={'/nitish3.mp4'} className="lg:pt-10"></video>
+          <video
+            controls
+            src={'/nitish3.mp4'}
+            poster={'/nitish3.mp4'}
+            preload="metadata"
+            className="lg:pt-10"
+          ></video>
         </div>
         <div id="about-cta" className="mx-2 mt-2 mb-4   lg:-mt-4  lg:mb-8">
           <Link
