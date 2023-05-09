@@ -31,14 +31,14 @@ export function Footer({ BG }) {
         'overflow-hidden py-6  dark:bg-black lg:pt-14 '
       )}
     >
-      <div
+      {/* <div
         id="link"
         className="flex items-center justify-center overflow-x-scroll py-6 lg:hidden lg:px-6"
       >
         <CommonSocialLinks
           color={'!text-white relative z-10 text-xl text-center px-3 '}
         />
-      </div>
+      </div> */}
       <div>
         <div className="mx-auto -mt-24 flex max-w-7xl flex-col items-start justify-between gap-y-12  overflow-hidden  px-6 px-4 pb-6 sm:px-6 lg:flex-row lg:items-center lg:py-16 lg:px-8">
           <div>
@@ -52,11 +52,11 @@ export function Footer({ BG }) {
               </div>
             </div>
           </div>
-          <nav className="inline-flex hidden justify-center gap-8  overflow-x-scroll px-[5%]  lg:mt-11 lg:flex">
+          {/* <nav className="inline-flex hidden justify-center gap-8  overflow-x-scroll px-[5%]  lg:mt-11 lg:flex">
             <CommonSocialLinks
               color={'!text-white relative z-10 text-xl text-center px-3 '}
             />
-          </nav>
+          </nav> */}
         </div>
         <div className="flex max-w-none flex-col items-center justify-center overflow-x-scroll border-t border-gray-200 px-4 pt-8 pb-12 dark:border-black sm:px-6 md:flex-row-reverse md:justify-between md:pt-6 lg:px-[14%] lg:px-8">
           <nav className="mx-auto  flex max-w-7xl items-center justify-center  gap-8 overflow-x-scroll  py-6 lg:mt-11 lg:hidden ">

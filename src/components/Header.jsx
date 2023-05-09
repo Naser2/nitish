@@ -111,7 +111,7 @@ export function Header() {
             <Link href="/" aria-label="Home" className="">
               <Logo />
             </Link>
-            <div className="hidden items-center justify-center lg:flex lg:gap-10 min-[1200px]:mx-[10%]  min-[1500px]:mx-[41%] min-[1600px]:mx-[54%]">
+            <div className="hidden items-center justify-center lg:flex lg:gap-10 min-[1200px]:mx-[10%]  min-[1500px]:mx-[41%] min-[1600px]:mx-[40%] ">
               <NavLinks />
             </div>
           </div>

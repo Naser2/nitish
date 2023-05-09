@@ -576,13 +576,13 @@ export const Contact = () => {
             </Link>
             <br />
             <Link
-              href="tel:+1 ((917) 354-5555"
+              href="tel:+1 1(646)-588-9578"
               className="hover:text-blue-500 "
             >
-              +1 (917) 354-5555
+              +1 1(646)588-9578
             </Link>
             <br />
-            55 W. 24th St. New York, NY
+            Toronto CA
           </address>
         </p>
       </div>

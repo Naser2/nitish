@@ -2,39 +2,9 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
-export const CommonSocialLinks = ({ animate, color }) => {
+export const CommonSocialLinks = ({ color }) => {
   const [iconColor, setIconColor] = useState(null)
-  console.log('COLOR: ' + color)
-  // const [enlargeArtistName, setEnlargeArtistName] = useState(null)
-  useEffect(
-    (animate) => {
-      if (animate) {
-        setTimeout(() => {
-          setIconColor('!text-black   lg:!text-black ')
-        }, '4500')
-        setTimeout(() => {
-          setIconColor('!text-white   lg:!text-black ')
-        }, '11000')
-        setTimeout(() => {
-          setIconColor('!text-orange-400/90 lg:!text-black ')
-        }, '13000')
-        setTimeout(() => {
-          setIconColor('!text-orange-200  lg:!text-black ')
-        }, '13500')
-      }
 
-      // else if (color !== 'undefined') {
-      //   setTimeout(() => {
-      //     setIconColor(color)
-      //   }, '500')
-      // } else {
-      //   setTimeout(() => {
-      //     setIconColor('!text-black  lg:!text-blackkk ')
-      //   }, '1000')
-      // }
-    },
-    [animate, color]
-  )
   // !text-orange-400/90
   console.log('ICON-COLOR: ' + iconColor)
   return (
@@ -44,8 +14,8 @@ export const CommonSocialLinks = ({ animate, color }) => {
           key={item.name}
           href={item.href}
           className={clsx(
-            color ? color : 'text-white',
-            '!opacity-1 !z-50 text-transparent hover:text-blue-400 '
+            color ? color : 'text-black',
+            '!opacity-1 !z-50 hover:text-blue-400 '
           )}
         >
           <span className="sr-only">{item.name}</span>
@@ -58,9 +28,8 @@ export const CommonSocialLinks = ({ animate, color }) => {
       <Link
         href="mailto:soma@Nitishnyc.com"
         className={clsx(
-          iconColor,
-          animate && 'animate-rollIn6',
-          ' z-50 mt-2 flex max-h-20 items-center rounded-md  bg-transparent  pr-2 text-sm font-semibold md:mt-1 lg:px-2  lg:py-[0.4375rem] lg:pr-3 xl:-mt-1 xl:pl-6 '
+          color ? color : 'text-black',
+          'z-50  mt-2 flex max-h-20 items-center rounded-md bg-transparent  pr-2  text-sm font-semibold text-black md:mt-1 lg:px-2  lg:py-[0.4375rem] lg:pr-3 xl:-mt-1 xl:pl-6 '
         )}
         id="headlessui-tabs-tab-2"
       >

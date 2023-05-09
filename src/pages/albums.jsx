@@ -31,36 +31,62 @@ export default function LandingGallery() {
   }
 
   return (
-    <>
-      <div className="relative -mt-0 mb-44 bg-yellow-500  lg:py-14">
-        <img
-          src={personOfColor.src}
-          alt="App screenshot"
-          width={1832}
-          height={1242}
-          className="about-banner min-[600px]:aspect-[2160/1640] max-[600px]:aspect-[2102/1640] mt-10 object-cover object-center  md:mt-0 xl:rounded-xl"
-        />
-        <Gallery
-          projects={projects}
-          grid="grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-1"
-          randomQuote={randomQuote}
-          renderQuote={renderQuote}
-          renderAuthor={renderAuthor}
-          clikedIndex={clikedIndex}
-        />
-
-        <div className=" mt-24 py-0 md:px-0  lg:mx-12 ">
-          <h3
-            style={{
-              letterSpacing: '0.1em',
-            }}
-            className="text-2 color_15 font_5  font_4 !text-left !font-extrabold "
-          >
-            Thanks for visiting.
-          </h3>
+    <div className="relative mx-auto -mt-0   mb-44 max-w-7xl bg-yellow-500 px-4 sm:px-6 lg:py-14 lg:px-8">
+      <div className="relative grid grid-cols-12">
+        <div className="flex lg:col-span-5 xl:col-span-6 ">
+          {' '}
+          <div className="xl:mt-18 dark:highlight-white/10 relative z-10 my-auto divide-y divide-slate-100 rounded-xl bg-white shadow-xl ring-1 ring-slate-900/5 dark:divide-slate-200/5 dark:bg-slate-800">
+            <img
+              src={personOfColor.src}
+              alt="App screenshot"
+              width={1832}
+              height={1242}
+              className="about-banner mt-10 object-cover object-center max-[600px]:aspect-[2102/1640] min-[600px]:aspect-[2160/1640]  md:mt-0 xl:rounded-xl"
+            />
+          </div>
+        </div>
+        <div className="-mx-4 flex sm:mx-0 lg:col-span-7 lg:mt-0 xl:col-span-6">
+          <div className="relative h-[31.625rem] max-h-[60vh] overflow-hidden bg-slate-800 shadow-xl dark:bg-slate-900/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur sm:max-h-[none] sm:rounded-xl lg:h-[34.6875rem] xl:h-[31.625rem]">
+            <div className="relative flex w-full flex-col">
+              <img
+                src={personOfColor.src}
+                alt="App screenshot"
+                width={1832}
+                height={1242}
+                className="about-banner mt-10 object-cover object-center max-[600px]:aspect-[2102/1640] min-[600px]:aspect-[2160/1640]  md:mt-0 xl:rounded-xl"
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </>
+
+      <img
+        src={personOfColor.src}
+        alt="App screenshot"
+        width={1832}
+        height={1242}
+        className="about-banner mt-10 object-cover object-center max-[600px]:aspect-[2102/1640] min-[600px]:aspect-[2160/1640]  md:mt-0 xl:rounded-xl"
+      />
+      <Gallery
+        projects={projects}
+        grid="grid grid-cols-1 md:grid-cols-2 gap-x-1 gap-y-1"
+        randomQuote={randomQuote}
+        renderQuote={renderQuote}
+        renderAuthor={renderAuthor}
+        clikedIndex={clikedIndex}
+      />
+
+      <div className=" mt-24 py-0 md:px-0  lg:mx-12  ">
+        <h3
+          style={{
+            letterSpacing: '0.1em',
+          }}
+          className="text-2 color_15 font_5  font_4 !text-left !font-extrabold "
+        >
+          Thanks for visiting.
+        </h3>
+      </div>
+    </div>
   )
 }
 
